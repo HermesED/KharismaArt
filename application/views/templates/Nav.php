@@ -31,6 +31,8 @@
                             <li><p>
                             <?php if( $_SESSION['admin'] == 1 ){
                                     $rank = "ADMIN ";
+                                    $ip = $_SERVER['REMOTE_ADDR'];
+                                    $this->input->ip_address();
                                     $adm = $_SESSION['username'];}
                                 else if ( $_SESSION['admin'] == 0 ){
                                     $rank = "USER ";
@@ -40,7 +42,7 @@
                                     $adm  = "";
                                 }
                             ?>
-                                <?= $rank;?><a href="<?= base_url();?>usr/profile"> <?= $adm;?>
+                                <?= $rank;?><a href="<?= base_url();?>usr/profile"> <?= $adm;?><?= $ip;?>
                             <img class="img-circle" src="<?= base_url()?>assets/images/users/<?=$_SESSION['username']?>.jpg" /></a> 
                             </p>
                             </li>
@@ -94,7 +96,7 @@
                             <ul role="menu" class="sub-menu">
                                 <li <?php if($page == "Dftr") echo "class='active'";?>><a href="<?= base_url();?>pendaftaran">Pendaftaran</a></li>
                                 <li <?php if($page == "Btl") echo "class='active'";?>><a href="<?= base_url();?>pembatalan">Pembatalan</a></li>
-                                <li <?php if($page == "Mbm") echo "class='active'";?>><a href="<?= base_url();?>members">Members</a></li>
+                                <li <?php if($page == "MB1") echo "class='active'";?>><a href="<?= base_url();?>members">Members</a></li>
                             </ul>
                         </li>
                     <?php else : ?>

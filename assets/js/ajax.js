@@ -20,17 +20,15 @@ $("#dftrnim").change( function(){
         '320': "D3 - Teknik Informatika"
     }
     
-    var sel = prodi[$(this).val().substr(0,3)];
+    var sel      = prodi[$(this).val().substr(0,3)];
+    var angkatan = $("#dftrnim").val().substr(3,2);
 
     if(sel) {
         $('#dftrprodi option[value="' + sel + '"]').attr("selected", "selected");
+        $("#dftrthn").val("20"+angkatan);
     }
     else{
         ////
-    }
-
-    if(sel < tahun.indexOf($(this).val().substr(2,2)) ){
-        $("#dftrthn").attr("disabled", true);
     }
 
     if (noprodi.indexOf($(this).val().substr(0,3)) < 0 || parseInt($(this).val().substr(3,2))+2000>tahun){
@@ -147,6 +145,13 @@ $("#dftrhp").change( function(){
         //
     }
 } );
+
+//$("#dftrthn").change( function(){
+//    var d = new Date();
+//    var tahun = d.getFullYear().toString();
+
+//    $("#dftrthn").val(tahun);
+//} );
 
 $("#likenews").click( function(){
     $.ajax({

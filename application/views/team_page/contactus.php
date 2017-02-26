@@ -1,29 +1,26 @@
-<head>
-    <title><?= $title;?></title>
-    <link href="<?= base_url();?>assets/css/prettyPhoto.css" rel="stylesheet">
-    <link href="<?= base_url();?>assets/css/lightbox.css" rel="stylesheet"> 
-    <link href="<?= base_url();?>assets/css/animate.min.css" rel="stylesheet">
-</head><!--/head-->
+<title>
+  <?php echo $title;?>
+</title>
 
-<body>
-    <section id="map-section">
-        <div class="container">
-            <div id="gmap"></div>
-            <div class="contact-info">
-                <h2>Contacts</h2>
-                <address>
-                E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br> 
-                Phone: +1 (123) 456 7890 <br> 
-                Fax: +1 (123) 456 7891 <br> 
-                </address>
-
-                <h2>Address</h2>
-                <address>
-                Unit C2, St.Vincent's Trading Est., <br> 
-                Feeder Road, <br> 
-                Bristol, BS2 0UY <br> 
-                United Kingdom <br> 
-                </address>
-            </div>
+   <!-- /.Dashboard -->
+    <div class="col-sm-7 col-sm-offset-3 col-md-8 col-md-offset-2 main">
+    <h1 class="page-header">Kontak Kami</h1>
+      <div class="row placeholders">
+        <div class="col-xs-6 col-sm-3 placeholder">
+          <a href="https://www.facebook.com/ilfan.diago?ref=ts&fref=ts" target="_blank"><img src=assets\images\kontak\facebooklogo2.png class="img-responsive gmbrkontak" alt="FACEBOOK"></a>
+          <h3>Facebook</h3>
+          <span><h4>@Ilfan Diago</h4></span>
         </div>
-    </section> <!--/#map-section-->
+        <div class="col-xs-6 col-sm-3 placeholder">
+          <img src=assets\images\kontak\line.png class="img-responsive gmbrkontak" alt="LINE"></a>
+          <h3>LINE!</h3>
+          <span><h4>@UKM Menggambar</h4></span>
+        </div>
+        <div class="col-xs-6 col-sm-3 placeholder">
+          <a href="https://www.instagram.com/ukm_k.art/" target="_blank"><img src=assets\images\kontak\instagramlogo.png class="img-responsive gmbrkontak" alt="FACEBOOK"></a>
+          <h3>Instagram!</h3>
+          <span><h4>@ukm_k.art</h4></span>
+        </div>        
+      </div>
+    </div>
+</html>

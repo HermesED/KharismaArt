@@ -27,7 +27,7 @@
                             <h2>Upload File To Gallery</h2>
                             <div class="form-group">
                                 <i class="upload fa fa-camera"></i><span> No File Selected</span>
-                                <input id="input-file" type="file" name="foto">
+                                <input id="file-path" type="file" name="foto">
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-common" value="Update"><i class="fa fa-upload fa-2x"> Upload</i></button>

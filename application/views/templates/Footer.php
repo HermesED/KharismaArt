@@ -85,6 +85,7 @@
                         <p>Crafted by <a target="_blank" href="http://designscrazed.org/">Thanks to templates and design by: Allie</a></p>
                     </div>
                 </div>
+                <script id="cid0020000148898494870" data-cfasync="false" async src="//st.chatango.com/js/gz/emb.js" style="width: 200px;height: 300px;">{"handle":"kharismaart","arch":"js","styles":{"a":"6633ff","b":100,"c":"000000","d":"000000","k":"6633ff","l":"6633ff","m":"6633ff","p":"10","q":"6633ff","r":100,"pos":"br","cv":1,"cvbg":"6633ff","cvw":75,"cvh":30,"ticker":1,"fwtickm":1}}</script>
             </div>
         </div>
     </footer>

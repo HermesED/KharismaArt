@@ -36,13 +36,15 @@
                                     $adm = $_SESSION['username'];}
                                 else if ( $_SESSION['admin'] == 0 ){
                                     $rank = "USER ";
+                                    $ip = $_SERVER['REMOTE_ADDR'];
+                                    $this->input->ip_address();
                                     $adm = $_SESSION['username'];}
                                 else{
                                     $rank = "VISITOR";
                                     $adm  = "";
                                 }
                             ?>
-                                <?= $rank;?><a href="<?= base_url();?>usr/profile"> <?= $adm;?><?= $ip;?>
+                                <?= $rank;?><a href="<?= base_url();?>usr/profile"> <?= $adm;?> <?= $ip;?>
                             <img class="img-circle" src="<?= base_url()?>assets/images/users/<?=$_SESSION['username']?>.jpg" /></a> 
                             </p>
                             </li>

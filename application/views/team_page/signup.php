@@ -9,10 +9,10 @@
                 <h1 class="logo"><img src="<?= base_url()?>assets/images/kart.jpg" alt="logo">SIGN UP</h1>
             </a>
             <div id="signup">
-	            <label for="signup">
-					Already have one?
-					<a href="<?= base_url()?>usr/login"><button class="btn btn-lg btn-common">LOGIN</button></a>
-				</label>
+	        <label for="signup">
+			Already have one?
+			<a href="<?= base_url()?>usr/login"><button class="btn btn-lg btn-common">LOGIN</button></a>
+		</label>
             </div>
 		<div class="container">
 		<?php
@@ -52,8 +52,16 @@
 					Password:
 					<input type="password" name="password" id="password" maxlength="255" placeholder="Password (1 UPPERCASE, lowercase and number)" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
 				</label>
+				<!--<label for="IP">
+					IP ADDRESS:
+					< ?php $ip = $_SERVER['REMOTE_ADDR'];
+						  $this->input->ip_address();?>
+					<input type="text" name="ip" id="ip" maxlength="255" placeholder="IP ADRESS" value="< ?= $ip;?>" />
+				</label>-->
 				<button type="submit" class="btn btn-lg btn-block btn-common">REGISTER</button>
 			</form>
 		</div>
 	</section>
 </body>
+
+<script src="<?= base_url()?>assets/js/ajax.js"></script>
